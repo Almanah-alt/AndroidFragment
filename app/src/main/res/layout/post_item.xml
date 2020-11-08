@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/fimg"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/timur_tleu"
+                tools:ignore="SmallSp" />
+            <TextView
+                android:textSize="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/almaty_kazakhstan"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/post_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fimg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/likes_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:textColor="#FFF"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="@string/_809_likes"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <TextView
+
+            android:id="@+id/author_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/timur_tleu"
+            android:textColor="#FFF" />
+
+        <TextView
+            android:layout_marginStart="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#FFF"
+            android:text="@string/timur_tleu_title"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/user_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="textStart"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:padding="5dp"
+        android:textColor="#BFBBBB"
+        android:text="@string/view_all_48_comments"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:text="@string/unmaner13666_full"
+            android:layout_marginStart="10dp"
+            android:textColor="#FFF"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="20dp"
+        android:paddingEnd="10dp"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="#989898"/>
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:id="@+id/reply_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/timur_tleu_unmaner13666"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_baseline_favorite_border_24"
+            android:contentDescription="@string/_809_likes" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="start|center"
+            android:orientation="horizontal">
+            <ImageView
+                android:background="@drawable/img_bg"
+                android:layout_width="20dp"
+                android:scaleType="centerCrop"
+                android:layout_height="20dp"
+                android:src="@drawable/fimg"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#000"
+                android:hint="@string/add_a_comment"
+                android:textColorHint="#818080"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="end|center">
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_baseline_favorite_border_24"
+                android:background="#000"/>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#000"
+                android:src="@drawable/ic_baseline_sports_handball_24"/>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:background="#000"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_outline_add_circle_outline_24"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/posted_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/_2_hours_ago"
+            android:textColor="#858383"
+            />
+
+        <TextView
+            android:id="@+id/see_translation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:textColor="#FFF"
+            android:text="@string/see_translation"/>
+
+    </LinearLayout>
+
+</LinearLayout>

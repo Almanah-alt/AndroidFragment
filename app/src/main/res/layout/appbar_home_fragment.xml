@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/top_home_toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@drawable/fragment_toolbar_bg"
+    app:navigationIcon="@drawable/ic_outline_camera_alt_24">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:text="@string/instagram"
+            android:gravity="center"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/send_img"
+            android:src="@drawable/ic_outline_send_24" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.Toolbar>
+
